@@ -17,7 +17,7 @@ The goal is to evaluate your ability to:
 Use the image below as your visual guide:
 
 ![Design Reference PDF](./assets/design-reference.pdf)
-![Design Reference Figma](https://www.figma.com/design/euKTRDkrruHbQtNj86dhvw/DigiForge---Software-Agency-Landing-Page--Community-?node-id=0-1&p=f&t=C4GYUL0ioduRCYHG-0)
+[Design Reference Figma](https://www.figma.com/design/euKTRDkrruHbQtNj86dhvw/DigiForge---Software-Agency-Landing-Page--Community-?node-id=0-1&p=f&t=C4GYUL0ioduRCYHG-0)
 
 The layout contains:
 - A header with navigation
