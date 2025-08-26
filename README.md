@@ -69,19 +69,6 @@ These features are not mandatory, but appreciated:
 
 ---
 
-## 📂 Suggested Folder Structure
-landing-page-challenge/
-├── index.html
-├── /scss/
-│ └── styles.scss
-├── /js/
-│ └── main.js
-├── /assets/
-│ └── example.jpg
-└── README.md
-
----
-
 ## 📦 Delivery Instructions
 
 1. Push your code to a **public GitHub repo**.
