@@ -39,3 +39,35 @@ window.addEventListener("scroll", () => {
     btnTop.classList.remove("visible");
   }
 });
+
+// Featured Work interatividade
+const featuredItems = document.querySelectorAll(".featured-item");
+const featuredImage = document.querySelector(".featured-image img");
+const images = [
+  "./assets/investar.png",
+  "./assets/inga.jpg",
+  "./assets/sigma.jpg",
+];
+
+let activeIdx = 0;
+
+function setActive(idx) {
+  featuredItems.forEach((el, i) => {
+    if (i === idx) {
+      el.classList.add("active");
+    } else {
+      el.classList.remove("active");
+    }
+  });
+  featuredImage.src = images[idx];
+  activeIdx = idx;
+}
+
+featuredItems.forEach((item, idx) => {
+  item.addEventListener("click", () => {
+    setActive(idx);
+  });
+});
+
+// Inicializa o primeiro como ativo
+setActive(0);

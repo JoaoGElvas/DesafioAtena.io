@@ -73,8 +73,9 @@
   margin-top: 8px;
 }
 .hero-btn:hover {
-  background: $main-white;
-  color: $main-black;
+  background: $main-red;
+  color: $main-white;
+  border-color: $main-red;
 }
 .hero-btn span {
   margin-left: 8px;
