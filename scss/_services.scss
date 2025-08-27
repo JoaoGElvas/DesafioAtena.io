@@ -1,0 +1,90 @@
+.services-section {
+  width: 100%;
+  background: $main-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.services-title {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: $main-white;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.services-title span {
+  color: $main-red;
+  font-weight: 700;
+  font-style: bold;
+}
+.services-subtitle {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $main-white;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px 32px;
+  width: 90%;
+  max-width: 1200px;
+}
+.service-card {
+  background: transparent;
+  border-radius: 8px;
+  padding: 32px 28px 32px 28px;
+  color: $main-white;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 220px;
+  transition: background 0.2s;
+}
+.service-card:hover {
+  background: #232323;
+}
+.service-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.service-icon {
+  font-size: 40px;
+  color: $main-red;
+}
+.service-arrow {
+  font-size: 18px;
+  color: $main-white;
+  transition: color 0.2s;
+}
+.service-card:hover .service-arrow {
+  color: $main-red;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0;
+}
+.service-card p {
+  font-family: $logo-font;
+  font-size: 16px;
+  font-weight: 400;
+  color: $main-white;
+  opacity: 0.85;
+  margin-bottom: 0;
+  margin-top: 0;
+}

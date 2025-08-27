@@ -1,3 +1,122 @@
+// Why Us Section
+.whyus-section {
+  width: 100%;
+  background: #111111;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whyus-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  width: 100%;
+  max-width: 1400px;
+  align-items: center;
+}
+.whyus-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  min-width: 340px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+.whyus-content {
+  align-items: center;
+}
+.whyus-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whyus-title {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: $main-white;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+}
+.whyus-title span {
+  color: #fc3f37;
+  font-weight: 700;
+}
+.whyus-desc {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $main-white;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  margin-bottom: 0;
+  max-width: 500px;
+}
+.whyus-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.whyus-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px 64px;
+}
+.whyus-stat {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: $main-white;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.whyus-number {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: #fc3f37;
+  margin-right: 12px;
+}
+// Botão voltar ao topo
+.btn-top {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 100;
+  background: $main-red;
+  color: $main-white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s, background 0.2s;
+}
+.btn-top:hover {
+  background: $main-white;
+  color: $main-red;
+  opacity: 1;
+}
+.btn-top.visible {
+  opacity: 0.92;
+  pointer-events: auto;
+}
 body {
   font-family: $logo-font;
   background: $main-black;
@@ -21,19 +140,12 @@ body {
 
 .bg-decor {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 600px;
   height: 400px;
   background: #fc3f3726;
   filter: blur(167px);
   z-index: 0;
-}
-.bg-decor.left {
-  top: -120px;
-  left: -180px;
-  transform: rotate(-15deg);
-}
-.bg-decor.right {
-  bottom: -120px;
-  right: -180px;
-  transform: rotate(15deg);
+  pointer-events: none;
 }
