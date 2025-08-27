@@ -1,16 +1,8 @@
 .header {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  padding: 32px 48px 0 48px;
+  padding: 0;
   position: relative;
 }
 .menu-hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
   cursor: pointer;
   width: 48px;
   height: 40px;
@@ -38,22 +30,15 @@
   width: 40px;
   transform: translateY(-8px) rotate(-45deg);
 }
-.header-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .logo-img {
   height: 48px;
   width: auto;
 }
+
 .header-right {
   min-width: 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
   position: relative;
+  margin-top: 0;
 }
 .estimate-text {
   font-family: $logo-font;

@@ -80,14 +80,9 @@
 .featured-item.active .featured-item-underline {
   background: $main-white;
 }
-// Featured Work Section
+
 .featured-section {
-  width: 100%;
   background: $main-black;
-  padding: 64px 0 48px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .featured-header {
   text-align: center;
@@ -107,7 +102,6 @@
 }
 .featured-title span {
   color: $main-red;
-  font-weight: 700;
 }
 .featured-desc {
   font-family: $logo-font;
@@ -116,77 +110,63 @@
   color: $main-white;
   opacity: 0.85;
   margin-bottom: 0;
-  line-height: 100%;
-  letter-spacing: 0;
-  text-align: center;
-  vertical-align: middle;
+  line-height: 1.5;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 .featured-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 64px;
-  width: 100%;
-  max-width: 1200px;
+  background-color: $main-black;
 }
 .featured-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  min-width: 320px;
-  gap: 32px;
 }
-.featured-title {
+.featured-item {
+  color: #444;
   font-family: $logo-font;
-  font-size: 64px;
-  font-weight: 700;
-  color: $main-white;
-  line-height: 100%;
-  letter-spacing: 0;
-  text-align: center;
+  font-weight: 600;
+  margin-bottom: 32px; // Ajustado
+  cursor: pointer;
+  transition: color 0.2s;
 }
-.featured-title span {
+.featured-item:hover,
+.featured-item.active {
   color: $main-red;
-  font-weight: 700;
+  .featured-item-type {
+    color: $main-white;
+  }
+  .featured-item-underline {
+    background: $main-white;
+  }
 }
-.featured-desc {
+.featured-item-title {
+  display: block;
   font-family: $logo-font;
-  font-size: 16px;
-  font-weight: 400;
-  color: $main-white;
-  opacity: 0.85;
-  margin-bottom: 0;
+  font-size: 32px;
+  font-weight: 500;
   line-height: 100%;
-  letter-spacing: 0;
-  text-align: center;
-  vertical-align: middle;
+  margin-bottom: 16px;
 }
-
+.featured-item-type {
+  display: block;
+  font-family: $logo-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #888;
+  margin-bottom: 8px;
+}
 .featured-item-underline {
   display: block;
   width: 120px;
   height: 2px;
   background: #444;
   margin-top: 4px;
-}
-.featured-item.active .featured-item-underline {
-  background: $main-white;
+  transition: background-color 0.2s;
 }
 .featured-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 500px;
-  max-width: 700px;
   background: $main-black;
 }
 .featured-image img {
   width: 100%;
-  max-width: 700px;
   border-radius: 20px;
 }

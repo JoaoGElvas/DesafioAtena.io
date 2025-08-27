@@ -12,18 +12,7 @@
   bottom: auto;
   z-index: 1;
 }
-.menu-overlay {
-  background: $main-black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  overflow: hidden;
-}
 
-// Overlay menu styles
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -32,19 +21,16 @@
   height: 100vh;
   background: $main-gray;
   display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   z-index: 9999;
   overflow: hidden;
 }
 .menu-overlay.active {
-  display: flex;
+  display: block;
 }
 .menu-overlay-header {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 32px 48px 0 48px;
   position: relative;
@@ -58,10 +44,6 @@
   border: none;
   width: 48px;
   height: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   z-index: 10;
 }
 .menu-overlay-close span {
@@ -80,9 +62,6 @@
   transform: rotate(-45deg);
 }
 .header-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   grid-column: 2;
 }
 .logo-img {
@@ -94,10 +73,6 @@
 }
 .header-right {
   min-width: 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
   position: relative;
   margin-right: 0;
   grid-column: 3;
@@ -145,10 +120,6 @@
 }
 .menu-overlay-nav {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-top: 70px;
 }
 .menu-overlay-nav ul {
@@ -157,9 +128,6 @@
   margin: 0;
   width: 100%;
   max-width: 420px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 .menu-overlay-nav li {
   color: $main-white;

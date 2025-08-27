@@ -1,24 +1,10 @@
-// Ready to Innovate Section
 .ready-section {
-  width: 100%;
   background: $main-black;
-  padding: 48px 0;
-  display: flex;
-  justify-content: center;
 }
 .ready-container {
   background: $main-gray;
   border-radius: 20px;
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 20px;
-  gap: 150px;
 }
-
 .ready-title {
   font-family: $logo-font;
   font-size: 45px;
@@ -26,32 +12,18 @@
   color: $main-white;
   margin-bottom: 8px;
   line-height: 100%;
-  letter-spacing: 0;
-  text-align: left;
-}
-
-.ready-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 30px;
 }
 
 .ready-title span {
   color: $main-red;
 }
-
 .ready-desc {
   font-family: $logo-font;
   font-size: 16px;
   font-weight: 400;
   color: $main-white;
   margin-bottom: 0;
-  line-height: 100%;
-  letter-spacing: 0;
-  vertical-align: middle;
-  text-align: left;
+  line-height: 1.5;
 }
 .ready-btn {
   font-family: $logo-font;
@@ -63,46 +35,26 @@
   padding: 18px 48px;
   cursor: pointer;
   transition: border-color 0.2s, color 0.2s;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   white-space: nowrap;
-  .ready-btn {
-    font-family: $logo-font;
-    font-size: 20px;
-    font-weight: 400;
-    color: $main-white;
-    background: transparent;
-    border: 3px solid $main-white;
-    border-radius: 4px;
-    padding: 8px 28px;
-    cursor: pointer;
-    transition: border-color 0.2s, color 0.2s;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    white-space: nowrap;
-  }
 }
-
 .ready-btn:hover {
   border-color: $main-red;
   color: $main-red;
 }
 @media (max-width: 900px) {
   .ready-title {
-    font-size: 48px;
+    font-size: 38px;
   }
   .ready-desc {
-    font-size: 18px;
+    font-size: 16px;
   }
   .ready-btn {
     font-size: 18px;
     padding: 12px 24px;
-  }
-  .ready-container {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 32px 16px;
+    width: 100%;
+    justify-content: center;
   }
 }

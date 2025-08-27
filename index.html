@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF--8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DigiForge - Software Agency</title>
     <link
@@ -12,20 +12,33 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Overlay Menu -->
     <div class="menu-overlay" id="menuOverlay">
       <div class="bg-decor left"></div>
       <div class="bg-decor right"></div>
       <div class="menu-overlay-header">
-        <button class="menu-overlay-close" id="menuOverlayClose" aria-label="Fechar menu">
+        <button
+          class="menu-overlay-close"
+          id="menuOverlayClose"
+          aria-label="Close menu"
+        >
           <span></span>
           <span></span>
         </button>
         <div class="header-center">
-          <img src="./assets/DigiForge.png" alt="DigiForge Logo" class="logo-img" />
+          <img
+            src="./assets/DigiForge.png"
+            alt="DigiForge Logo"
+            class="logo-img"
+          />
         </div>
         <div class="header-right">
           <span class="estimate-text">Get an Estimate</span>
@@ -42,212 +55,257 @@
         </ul>
       </nav>
     </div>
+
     <div class="main-bg">
       <div class="bg-decor left"></div>
       <div class="bg-decor right"></div>
-      <!-- Header Section -->
-      <header class="header">
-        <div class="menu-hamburger" id="menuHamburger">
-          <span class="bar bar-top"></span>
-          <span class="bar bar-bottom"></span>
-        </div>
-        <div class="header-center">
-          <img
-            src="./assets/DigiForge.png"
-            alt="DigiForge Logo"
-            class="logo-img"
-          />
-        </div>
-        <div class="header-right">
-          <span class="estimate-text">Get an Estimate</span>
-          <span class="estimate-underline"></span>
-        </div>
-      </header>
-      <!-- Hero Section -->
-      <main class="hero-section">
-        <div class="hero-content">
-          <h2 class="hero-title">
-            <span class="hero-title-top">INNOVATING SUSTAINABLE</span><br />
-            <span class="hero-title-mid">SOFTWARE SOLUTIONS</span>
-            <span class="hero-title-bottom">FOR ENTERPRISES!</span>
-          </h2>
-          <p class="hero-desc">
-            We welcome Startups, Growth Companies, and Enterprises to connect
-            with us to bring their ideas to life.
-          </p>
-          <a href="#" class="hero-btn">Let's Innovate <span>&rarr;</span></a>
-        </div>
-        <div class="hero-image">
-          <img src="./assets/hero.png" alt="Hero Reference" />
-        </div>
-      </main>
-      
-      <!-- Espaço entre botão e clientes -->
-      <div style="height: 48px"></div>
-      <!-- Clients Bar Section -->
-      <div class="clients-bar">
-        <img src="./assets/logos/fiverr.png" alt="Fiverr" />
-        <span class="clients-divider"></span>
-        <img src="./assets/logos/intuit.png" alt="Intuit" />
-        <span class="clients-divider"></span>
-        <img src="./assets/logos/sony.png" alt="Sony" />
-        <span class="clients-divider"></span>
-        <img src="./assets/logos/motul.png" alt="Motul" />
-        <span class="clients-divider"></span>
-        <img src="./assets/logos/clickup.png" alt="ClickUp" />
+
+      <div class="container">
+        <header class="row align-items-center py-3">
+          <div class="col-4 col-md-3">
+            <div class="menu-hamburger" id="menuHamburger">
+              <span class="bar bar-top"></span>
+              <span class="bar bar-bottom"></span>
+            </div>
+          </div>
+          <div class="col-4 col-md-6 text-center">
+            <img
+              src="./assets/DigiForge.png"
+              alt="DigiForge Logo"
+              class="logo-img"
+            />
+          </div>
+          <div class="col-4 col-md-3 text-end">
+            <div class="header-right d-none d-md-block">
+              <span class="estimate-text">Get an Estimate</span>
+              <span class="estimate-underline"></span>
+            </div>
+          </div>
+        </header>
       </div>
 
-      <!-- Services Section -->
-      <section class="services-section">
-        <div class="services-header">
+      <div class="container">
+        <main class="row align-items-center py-5">
+          <div class="col-12 col-lg-6 text-center text-lg-start">
+            <div class="hero-content">
+              <h2 class="hero-title">
+                <span class="hero-title-top">INNOVATING SUSTAINABLE</span><br />
+                <span class="hero-title-mid">SOFTWARE SOLUTIONS</span>
+                <span class="hero-title-bottom">FOR ENTERPRISES!</span>
+              </h2>
+              <p class="hero-desc">
+                We welcome Startups, Growth Companies, and Enterprises to
+                connect with us to bring their ideas to life.
+              </p>
+              <a href="#" class="hero-btn"
+                >Let's Innovate <span>&rarr;</span></a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+            <div class="hero-image">
+              <img
+                src="./assets/hero.png"
+                alt="Hero Reference"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div class="container">
+        <div
+          class="clients-bar d-flex flex-wrap justify-content-around align-items-center py-4"
+        >
+          <img src="./assets/logos/fiverr.png" alt="Fiverr" class="m-2" />
+          <span class="clients-divider d-none d-md-block"></span>
+          <img src="./assets/logos/intuit.png" alt="Intuit" class="m-2" />
+          <span class="clients-divider d-none d-md-block"></span>
+          <img src="./assets/logos/sony.png" alt="Sony" class="m-2" />
+          <span class="clients-divider d-none d-md-block"></span>
+          <img src="./assets/logos/motul.png" alt="Motul" class="m-2" />
+          <span class="clients-divider d-none d-md-block"></span>
+          <img src="./assets/logos/clickup.png" alt="ClickUp" class="m-2" />
+        </div>
+      </div>
+
+      <section class="services-section container text-center py-5">
+        <div class="services-header mb-5">
           <h2 class="services-title">Our <span>Services</span></h2>
           <p class="services-subtitle">
             We Offer Full Stack Development For Digital Innovation
           </p>
         </div>
-        <div class="services-grid">
-          <div class="service-card main">
-            <div class="service-row">
-              <i class="bi bi-hash service-icon"></i>
-              <i class="bi bi-arrow-up-right service-arrow"></i>
-            </div>
-            <h3>UI/UX Design</h3>
-            <p>
-              Design experiences, not just interfaces,<br />Our UI/UX service
-              brings your digital products to life!
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-row">
-              <i class="bi bi-phone service-icon"></i>
-              <i class="bi bi-arrow-up-right service-arrow"></i>
-            </div>
-            <h3>IOS & Android</h3>
-            <p>
-              We build comprehensive Android and IOS apps that meet your complex
-              business needs.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-row">
-              <i class="bi bi-megaphone service-icon"></i>
-              <i class="bi bi-arrow-up-right service-arrow"></i>
-            </div>
-            <h3>Digital Marketing</h3>
-            <p>
-              Transform your brand with our app development, enterprise CMS, and
-              emerging tech solutions.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-row">
-              <i class="bi bi-search service-icon"></i>
-              <i class="bi bi-arrow-up-right service-arrow"></i>
-            </div>
-            <h3>SEO</h3>
-            <p>
-              "We offer excellent SEO services using proven strategies to rank
-              your business high on search engines."
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-row">
-              <i class="bi bi-bar-chart-fill service-icon"></i>
-              <i class="bi bi-arrow-up-right service-arrow"></i>
-            </div>
-            <h3>Enterprise Solution</h3>
-            <p>
-              We turn your strategies into software systems that optimize your
-              business performance.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-row">
-              <i class="bi bi-gear service-icon"></i>
-              <i class="bi bi-arrow-up-right service-arrow"></i>
-            </div>
-            <h3>Maintenance</h3>
-            <p>
-              "We provide ongoing support to clients beyond project completion
-              with the goal of growing together."
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Why Us Section -->
-      <section class="whyus-section">
-        <div class="whyus-content">
-          <div class="whyus-left">
-            <h2 class="whyus-title">Why <span>Us?</span></h2>
-            <p class="whyus-desc">
-              DigiForge is a software development company that specializes in
-              providing our clients with high-quality development services.
-            </p>
-          </div>
-          <div class="whyus-right">
-            <div class="whyus-stats">
-              <div class="whyus-stat">
-                <span class="whyus-number">384+</span>
-                <span class="whyus-label">Projects Delivered</span>
+        <div class="row g-4 text-start">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card main">
+              <div class="service-row">
+                <i class="bi bi-hash service-icon"></i>
+                <i class="bi bi-arrow-up-right service-arrow"></i>
               </div>
-              <div class="whyus-stat">
-                <span class="whyus-number">30+</span>
-                <span class="whyus-label">Developers</span>
+              <h3>UI/UX Design</h3>
+              <p>
+                Design experiences, not just interfaces. Our UI/UX service
+                brings your digital products to life!
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-row">
+                <i class="bi bi-phone service-icon"></i>
+                <i class="bi bi-arrow-up-right service-arrow"></i>
               </div>
-              <div class="whyus-stat">
-                <span class="whyus-number">8839+</span>
-                <span class="whyus-label">Hours Worked</span>
+              <h3>iOS & Android</h3>
+              <p>
+                We build comprehensive Android and iOS apps that meet your
+                complex business needs.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-row">
+                <i class="bi bi-megaphone service-icon"></i>
+                <i class="bi bi-arrow-up-right service-arrow"></i>
               </div>
-              <div class="whyus-stat">
-                <span class="whyus-number">15+</span>
-                <span class="whyus-label">Global Footprints</span>
+              <h3>Digital Marketing</h3>
+              <p>
+                Transform your brand with our app development, enterprise CMS,
+                and emerging tech solutions.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-row">
+                <i class="bi bi-search service-icon"></i>
+                <i class="bi bi-arrow-up-right service-arrow"></i>
               </div>
+              <h3>SEO</h3>
+              <p>
+                We offer excellent SEO services using proven strategies to rank
+                your business high on search engines.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-row">
+                <i class="bi bi-bar-chart-fill service-icon"></i>
+                <i class="bi bi-arrow-up-right service-arrow"></i>
+              </div>
+              <h3>Enterprise Solution</h3>
+              <p>
+                We turn your strategies into software systems that optimize your
+                business performance.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-row">
+                <i class="bi bi-gear service-icon"></i>
+                <i class="bi bi-arrow-up-right service-arrow"></i>
+              </div>
+              <h3>Maintenance</h3>
+              <p>
+                We provide ongoing support to clients beyond project completion
+                with the goal of growing together.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Featured Work Section -->
-      <section class="featured-section">
-        <div class="featured-header">
+      <section class="whyus-section container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-5">
+            <div class="whyus-left">
+              <h2 class="whyus-title">Why <span>Us?</span></h2>
+              <p class="whyus-desc">
+                DigiForge is a software development company that specializes in
+                providing our clients with high-quality development services.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="row text-center">
+              <div class="col-6 col-md-3 mb-4">
+                <div class="whyus-stat">
+                  <span class="whyus-number">384+</span>
+                  <span class="whyus-label">Projects Delivered</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <div class="whyus-stat">
+                  <span class="whyus-number">30+</span>
+                  <span class="whyus-label">Developers</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <div class="whyus-stat">
+                  <span class="whyus-number">8839+</span>
+                  <span class="whyus-label">Hours Worked</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <div class="whyus-stat">
+                  <span class="whyus-number">15+</span>
+                  <span class="whyus-label">Global Footprints</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-section container py-5">
+        <div class="featured-header text-center mb-5">
           <h2 class="featured-title">Featured <span>Work</span></h2>
           <p class="featured-desc">
             Our team of creative professionals work in a collaborative fashion
             to craft tangible solutions.
           </p>
         </div>
-        <div class="featured-content">
-          <div class="featured-list">
-            <div class="featured-item active">
-              <span class="featured-item-title">Upguard Investar</span>
-              <span class="featured-item-type">Case Study</span>
-              <span class="featured-item-underline"></span>
-            </div>
-            <div class="featured-item">
-              <span class="featured-item-title">Inga Motors</span>
-              <span class="featured-item-type">Case Study</span>
-              <span class="featured-item-underline"></span>
-            </div>
-            <div class="featured-item">
-              <span class="featured-item-title">Onboarding with Sigma</span>
-              <span class="featured-item-type">Case Study</span>
-              <span class="featured-item-underline"></span>
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-5">
+            <div class="featured-list">
+              <div class="featured-item active">
+                <span class="featured-item-title">Upguard Investar</span>
+                <span class="featured-item-type">Case Study</span>
+                <span class="featured-item-underline"></span>
+              </div>
+              <div class="featured-item">
+                <span class="featured-item-title">Inga Motors</span>
+                <span class="featured-item-type">Case Study</span>
+                <span class="featured-item-underline"></span>
+              </div>
+              <div class="featured-item">
+                <span class="featured-item-title">Onboarding with Sigma</span>
+                <span class="featured-item-type">Case Study</span>
+                <span class="featured-item-underline"></span>
+              </div>
             </div>
           </div>
-          <div class="featured-image">
-            <img
-              src="./assets/investar.png"
-              alt="Upguard Investar Case Study"
-            />
+          <div class="col-12 col-lg-7">
+            <div class="featured-image">
+              <img
+                src="./assets/investar.png"
+                alt="Upguard Investar Case Study"
+                class="img-fluid rounded"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Ready to Innovate Section -->
-      <section class="ready-section">
-        <div class="ready-container">
-          <div class="ready-content">
+      <section class="ready-section container py-5">
+        <div
+          class="ready-container rounded p-5 d-md-flex justify-content-between align-items-center text-center text-md-start"
+        >
+          <div class="ready-content mb-4 mb-md-0">
             <h2 class="ready-title">Ready to <span>Innovate</span></h2>
             <p class="ready-desc">
               Contact us to schedule an in-depth discussion about your project
@@ -261,81 +319,113 @@
         </div>
       </section>
 
-      <!-- Customers Section -->
-      <section class="customers-section">
+      <section class="customers-section container text-center py-5">
         <h2 class="customers-title">Our <span>Customer</span></h2>
         <div class="customers-subtitle">See what our customer say about us</div>
-        <div class="customers-tabs">
-          <span class="customers-tab"><span class="customers-tab-circle"></span>Satisfied customers</span>
-          <span class="customers-tab"><span class="customers-tab-circle-red"></span>Customers reviews</span>
+        <div class="customers-tabs my-4 d-flex justify-content-center">
+          <span class="customers-tab"
+            ><span class="customers-tab-circle"></span>Satisfied customers</span
+          >
+          <span class="customers-tab"
+            ><span class="customers-tab-circle-red"></span>Customers
+            reviews</span
+          >
         </div>
         <div class="customers-map">
           <img
             src="./assets/costumers.png"
             alt="Customers Map"
-            class="customers-map-img"
+            class="customers-map-img img-fluid"
           />
-          </div>
-          </div>
         </div>
       </section>
     </div>
 
-    <!-- Contact Us Section -->
-    <section class="contact-section">
-      <div class="contact-container">
-        <div class="contact-main">
-          <div class="contact-brand">
-            <img src="./assets/DigiForge.png" alt="DigiForge Logo" class="contact-logo" />
-            <p class="contact-desc">
-              We believe in growing together by empowering businesses through technologies and fulfilling their complex software needs by strategic planning and development.
-            </p>
-            <form class="contact-newsletter">
-              <input type="email" class="contact-input" placeholder="Enter your email" />
-              <button type="submit" class="contact-btn">Join Newsletter</button>
-            </form>
-            <div class="contact-social">
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-linkedin"></i>
+    <section class="contact-section py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-12 col-lg-5">
+            <div class="contact-brand">
+              <img
+                src="./assets/DigiForge.png"
+                alt="DigiForge Logo"
+                class="contact-logo"
+              />
+              <p class="contact-desc">
+                We believe in growing together by empowering businesses through
+                technologies and fulfilling their complex software needs by
+                strategic planning and development.
+              </p>
+              <form class="contact-newsletter">
+                <input
+                  type="email"
+                  class="contact-input"
+                  placeholder="Enter your email"
+                />
+                <button type="submit" class="contact-btn">
+                  Join Newsletter
+                </button>
+              </form>
+              <div class="contact-social">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+              </div>
             </div>
           </div>
-          <div class="contact-links">
-            <h3 class="contact-title contact-title-red">Links</h3>
-            <ul class="contact-list">
-              <li>Home</li>
-              <li>Technologies</li>
-              <li>Case Studies</li>
-              <li>Clients</li>
-              <li>Portfolio</li>
-            </ul>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="contact-links">
+              <h3 class="contact-title contact-title-red">Links</h3>
+              <ul class="contact-list">
+                <li>Home</li>
+                <li>Technologies</li>
+                <li>Case Studies</li>
+                <li>Clients</li>
+                <li>Portfolio</li>
+              </ul>
+            </div>
           </div>
-          <div class="contact-services">
-            <h3 class="contact-title contact-title-red">Services</h3>
-            <ul class="contact-list">
-              <li>UI/UX</li>
-              <li>Web Development</li>
-              <li>Mobile Application</li>
-              <li>Digital Marketing</li>
-              <li>SEO</li>
-            </ul>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="contact-services">
+              <h3 class="contact-title contact-title-red">Services</h3>
+              <ul class="contact-list">
+                <li>UI/UX</li>
+                <li>Web Development</li>
+                <li>Mobile Application</li>
+                <li>Digital Marketing</li>
+                <li>SEO</li>
+              </ul>
+            </div>
           </div>
-          <div class="contact-address">
-            <h3 class="contact-title contact-title-red">Address</h3>
-            <div class="contact-address-info">
-              <div><strong>info@digiforge.com</strong></div>
-              <div>1560 Pedrick Rd, Tallahassee,<br />Florida <br /> +92 42 322 96908</div>
-              <div>Milwaukee,<br />FL West Virginia<br />10500 W Silver Spring Dr<br />(414) 466-7800</div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="contact-address">
+              <h3 class="contact-title contact-title-red">Address</h3>
+              <div class="contact-address-info">
+                <div><strong>info@digiforge.com</strong></div>
+                <div>
+                  1560 Pedrick Rd, Tallahassee,<br />Florida <br />
+                  +92 42 322 96908
+                </div>
+                <div>
+                  Milwaukee,<br />FL West Virginia<br />10500 W Silver Spring
+                  Dr<br />(414) 466-7800
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <script src="./js/main.js"></script>
-    <footer class="main-footer">
-      <div class="main-footer-content">
-        ©2023-DigiForge | All Right Reserved
-      </div>
+
+    <footer class="main-footer text-center py-3">
+      <div class="container">©2023-DigiForge | All Right Reserved</div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6wIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
