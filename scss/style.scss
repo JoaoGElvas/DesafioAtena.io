@@ -1,0 +1,47 @@
+/* SCSS principal para Digiforge Landing */
+
+$main-red: #ff4d4d;
+$main-black: #0a0a0a;
+$main-white: #fff;
+$main-gray: #eaeaea;
+
+$logo-font: "Poppins", Arial, sans-serif;
+
+@import "variables";
+@import "base";
+@import "header";
+@import "hero";
+@import "clients";
+
+.hero-image img {
+  max-width: 620px;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.clients-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #000;
+  padding: 32px 0;
+  border-top: none;
+  position: relative;
+  z-index: 2;
+}
+.clients-bar img {
+  max-height: 48px;
+  margin: 0 24px;
+  filter: brightness(1.1) grayscale(10%);
+}
+.clients-divider {
+  display: inline-block;
+  width: 2px;
+  height: 40px;
+  background: #181818;
+  vertical-align: middle;
+  margin: 0 8px;
+  border-radius: 2px;
+}

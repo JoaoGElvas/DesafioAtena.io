@@ -1,0 +1,39 @@
+body {
+  font-family: $logo-font;
+  background: $main-black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.main-bg {
+  min-height: 100vh;
+  background: $main-black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.bg-decor {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  background: #fc3f3726;
+  filter: blur(167px);
+  z-index: 0;
+}
+.bg-decor.left {
+  top: -120px;
+  left: -180px;
+  transform: rotate(-15deg);
+}
+.bg-decor.right {
+  bottom: -120px;
+  right: -180px;
+  transform: rotate(15deg);
+}

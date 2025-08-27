@@ -1,0 +1,95 @@
+.hero-section {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  margin-top: 32px;
+  gap: 150px;
+}
+.hero-content {
+  max-width: 600px;
+  color: $main-white;
+}
+.hero-title {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  text-align: left;
+}
+.hero-title-top {
+  font-family: $logo-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: $main-white;
+  vertical-align: middle;
+  display: inline-block;
+}
+.hero-title-mid {
+  font-family: $logo-font;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 54px;
+  letter-spacing: 0;
+  color: $main-white;
+  vertical-align: middle;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hero-title-bottom {
+  font-family: $logo-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: $main-white;
+  vertical-align: middle;
+  display: inline-block;
+}
+.hero-desc {
+  font-family: $logo-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: $main-white;
+  vertical-align: middle;
+  margin-bottom: 32px;
+}
+.hero-btn {
+  display: inline-block;
+  padding: 16px 32px;
+  border: 2px solid $main-white;
+  border-radius: 8px;
+  background: transparent;
+  color: $main-white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  margin-top: 8px;
+}
+.hero-btn:hover {
+  background: $main-white;
+  color: $main-black;
+}
+.hero-btn span {
+  margin-left: 8px;
+  font-size: 1.3em;
+}
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-image img {
+  max-width: 620px;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
