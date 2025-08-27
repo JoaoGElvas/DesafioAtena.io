@@ -1,3 +1,28 @@
+.menu-overlay .bg-decor.right {
+  right: 0;
+  left: auto;
+  bottom: 20px;
+  top: auto;
+  z-index: 1;
+}
+
+.menu-overlay .bg-decor.left {
+  left: 0;
+  top: 0;
+  bottom: auto;
+  z-index: 1;
+}
+.menu-overlay {
+  background: $main-black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  overflow: hidden;
+}
+
 // Overlay menu styles
 .menu-overlay {
   position: fixed;
@@ -5,11 +30,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(
-    135deg,
-    #181818 0%,
-    #3a1818 100%
-  ); // igual ao fundo padrão
+  background: $main-gray;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -95,6 +116,7 @@
   color: $main-white;
   position: relative;
   z-index: 1;
+  transition: color 0.2s;
 }
 .estimate-underline {
   display: block;
@@ -104,6 +126,22 @@
   margin-top: 4px;
   margin-right: 0;
   align-self: flex-end;
+  transition: background 0.2s;
+}
+
+.header-right:hover .estimate-text,
+.menu-overlay .header-right:hover .estimate-text {
+  color: $main-red;
+}
+.header-right:hover .estimate-underline,
+.menu-overlay .header-right:hover .estimate-underline {
+  background: $main-red;
+}
+.header-right:hover .estimate-text,
+.header-right:hover .estimate-underline,
+.menu-overlay .header-right:hover .estimate-text,
+.menu-overlay .header-right:hover .estimate-underline {
+  color: $main-red;
 }
 .menu-overlay-nav {
   width: 100%;
