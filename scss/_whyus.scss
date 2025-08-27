@@ -1,0 +1,91 @@
+// Why Us Section
+.whyus-section {
+  width: 100%;
+  background: $main-gray;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whyus-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  width: 100%;
+  max-width: 1400px;
+  align-items: center;
+}
+.whyus-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  min-width: 340px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+.whyus-content {
+  align-items: center;
+}
+.whyus-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whyus-title {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: $main-white;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+}
+.whyus-title span {
+  color: $main-red;
+  font-weight: 700;
+}
+.whyus-desc {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $main-white;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  margin-bottom: 0;
+  max-width: 500px;
+}
+.whyus-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.whyus-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px 64px;
+}
+.whyus-stat {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: $main-white;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.whyus-number {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: $main-red;
+  margin-right: 12px;
+}

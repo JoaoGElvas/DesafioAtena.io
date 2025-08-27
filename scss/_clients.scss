@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #111111;
+  background: $main-black;
   padding: 32px 0;
   position: relative;
   z-index: 2;
@@ -16,7 +16,7 @@
   display: inline-block;
   width: 2px;
   height: 32px;
-  background: #181818;
+  background: $main-black;
   vertical-align: middle;
   margin: 0 8px;
   border-radius: 2px;

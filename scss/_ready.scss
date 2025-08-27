@@ -1,44 +1,52 @@
 // Ready to Innovate Section
 .ready-section {
   width: 100%;
-  background: #181818;
+  background: $main-black;
   padding: 48px 0;
   display: flex;
   justify-content: center;
 }
 .ready-container {
-  background: #111111;
-  border-radius: 12px;
+  background: $main-gray;
+  border-radius: 20px;
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px;
-  gap: 32px;
+  padding: 16px 20px;
+  gap: 150px;
 }
-.ready-content {
-  flex: 1;
-}
+
 .ready-title {
   font-family: "Poppins", Arial, sans-serif;
-  font-size: 48px;
+  font-size: 45px;
   font-weight: 700;
-  color: #fff;
-  margin-bottom: 24px;
+  color: $main-white;
+  margin-bottom: 8px;
   line-height: 100%;
   letter-spacing: 0;
   text-align: left;
 }
-.ready-title span {
-  color: #fc3f37;
+
+.ready-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 30px;
 }
+
+.ready-title span {
+  color: $main-red;
+}
+
 .ready-desc {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: $main-white;
   margin-bottom: 0;
   line-height: 100%;
   letter-spacing: 0;
@@ -47,22 +55,39 @@
 }
 .ready-btn {
   font-family: "Poppins", Arial, sans-serif;
-  font-size: 28px;
   font-weight: 400;
-  color: #fff;
+  color: $main-white;
   background: transparent;
-  border: 4px solid #fff;
-  border-radius: 12px;
+  border: 4px solid $main-white;
+  border-radius: 4px;
   padding: 18px 48px;
   cursor: pointer;
   transition: border-color 0.2s, color 0.2s;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
+  white-space: nowrap;
+  .ready-btn {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: $main-white;
+    background: transparent;
+    border: 3px solid $main-white;
+    border-radius: 4px;
+    padding: 8px 28px;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+  }
 }
+
 .ready-btn:hover {
-  border-color: #fc3f37;
-  color: #fc3f37;
+  border-color: $main-red;
+  color: $main-red;
 }
 @media (max-width: 900px) {
   .ready-title {
