@@ -9,7 +9,41 @@ const menuHamburger = document.getElementById("menuHamburger");
 if (menuHamburger) {
   menuHamburger.addEventListener("click", function () {
     this.classList.toggle("ativo");
+    const overlay = document.getElementById("menuOverlay");
+    if (overlay) {
+      if (!overlay.classList.contains("active")) {
+        setTimeout(() => {
+          overlay.classList.add("active");
+          document.body.style.overflow = "hidden";
+        }, 250); // tempo para animar o hambúrguer
+      } else {
+        overlay.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+    }
   });
+}
+// Overlay click closes menu
+const menuOverlay = document.getElementById("menuOverlay");
+if (menuOverlay) {
+  menuOverlay.addEventListener("click", function () {
+    // Só fecha se clicar fora do conteúdo
+    if (e.target === menuOverlay) {
+      menuOverlay.classList.remove("active");
+      document.body.style.overflow = "";
+      if (menuHamburger) menuHamburger.classList.remove("ativo");
+    }
+  });
+  // Botão X fecha menu
+  const closeBtn = document.getElementById("menuOverlayClose");
+  if (closeBtn) {
+    closeBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      menuOverlay.classList.remove("active");
+      document.body.style.overflow = "";
+      if (menuHamburger) menuHamburger.classList.remove("ativo");
+    });
+  }
 }
 
 // Smooth scroll
