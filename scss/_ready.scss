@@ -20,7 +20,7 @@
 }
 
 .ready-title {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: $logo-font;
   font-size: 45px;
   font-weight: 700;
   color: $main-white;
@@ -43,7 +43,7 @@
 }
 
 .ready-desc {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: $logo-font;
   font-size: 16px;
   font-weight: 400;
   color: $main-white;
@@ -54,7 +54,7 @@
   text-align: left;
 }
 .ready-btn {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: $logo-font;
   font-weight: 400;
   color: $main-white;
   background: transparent;
@@ -68,7 +68,7 @@
   gap: 10px;
   white-space: nowrap;
   .ready-btn {
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: $logo-font;
     font-size: 20px;
     font-weight: 400;
     color: $main-white;
