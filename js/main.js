@@ -58,7 +58,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 // Back to top button (bonus)
 const btnTop = document.createElement("button");
-btnTop.innerText = "↑";
+btnTop.innerHTML = '<i class="bi bi-arrow-up"></i>';
 btnTop.classList.add("btn-top");
 document.body.appendChild(btnTop);
 

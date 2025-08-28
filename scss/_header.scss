@@ -1,13 +1,29 @@
+.estimate-text {
+  font-family: $logo-font;
+  font-weight: 400;
+  font-size: 20px;
+  color: $main-white;
+  transition: color 0.2s;
+  text-align: right !important;
+  display: block;
+}
 .header {
   padding: 0;
   position: relative;
 }
+
 .menu-hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
   cursor: pointer;
   width: 48px;
   height: 40px;
   z-index: 10;
 }
+
 .menu-hamburger .bar {
   display: block;
   height: 4px;
@@ -36,28 +52,28 @@
 }
 
 .header-right {
-  min-width: 180px;
   position: relative;
-  margin-top: 0;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 0;
+  margin-right: auto;
 }
-.estimate-text {
-  font-family: $logo-font;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 100%;
-  letter-spacing: 0;
-  text-align: center;
-  color: $main-white;
-  position: relative;
-  z-index: 1;
-}
+
 .estimate-underline {
-  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -5px;
   width: 110px;
   height: 2px;
   background: $main-white;
-  margin-top: 4px;
-  margin-right: 0;
-  align-self: flex-end;
+  margin-left: auto;
+  transition: background-color 0.2s;
+}
+
+.header-right:hover .estimate-text {
+  color: $main-red;
+}
+
+.header-right:hover .estimate-underline {
+  background: $main-red;
 }
