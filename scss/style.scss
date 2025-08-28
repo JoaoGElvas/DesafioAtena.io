@@ -1,3 +1,96 @@
+// Centraliza tudo em telas pequenas
+@media (max-width: 900px) {
+  .main-bg,
+  .header,
+  .hero-content,
+  .services-section,
+  .featured-section,
+  .ready-section,
+  .customers-section,
+  .contact-section,
+  .main-footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  body {
+    text-align: center !important;
+  }
+  .hero-title-top,
+  .hero-title-mid,
+  .hero-title-bottom {
+    font-size: 2rem !important;
+    line-height: 1.1 !important;
+    margin-bottom: 12px !important;
+  }
+  .hero-desc {
+    font-size: 1rem !important;
+    margin-bottom: 18px !important;
+  }
+  .featured-title,
+  .customers-title,
+  .services-title,
+  .whyus-title,
+  .ready-title {
+    font-size: 2rem !important;
+    margin-bottom: 12px !important;
+  }
+  .menu-overlay-nav ul {
+    max-width: 100vw !important;
+    padding: 0 8px !important;
+  }
+  .menu-overlay-nav li {
+    font-size: 1.3rem !important;
+    margin-bottom: 18px !important;
+    text-align: center !important;
+  }
+  .menu-overlay-header {
+    display: none !important;
+  }
+  .menu-overlay-close {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 16px auto 0 auto !important;
+    position: static !important;
+    left: unset !important;
+    right: unset !important;
+  }
+  .menu-overlay {
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 0 !important;
+  }
+  .service-row {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .customers-card.left,
+  .customers-card.right {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+  .header-right {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+  .contact-desc,
+  .contact-newsletter,
+  .contact-social {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    justify-content: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
 @import "variables";
 @import "base";
 @import "header";

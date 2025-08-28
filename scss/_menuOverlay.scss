@@ -43,6 +43,20 @@
 
   // REMOVIDO: justify-content: space-between;
 }
+@media (max-width: 900px) {
+  .menu-overlay-header {
+    display: none !important;
+  }
+  .menu-overlay-close {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 16px auto 0 auto !important;
+    position: static !important;
+    left: unset !important;
+    right: unset !important;
+  }
+}
 
 .menu-overlay-close {
   flex-shrink: 0; // ADICIONADO: Garante que o botão não encolha

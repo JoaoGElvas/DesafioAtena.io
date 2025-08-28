@@ -10,6 +10,46 @@
 .header {
   padding: 0;
   position: relative;
+  width: 100%;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: row;
+    padding: 8px 12px;
+    min-height: 56px;
+  }
+  .logo-img {
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+  }
+  .header-right {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    text-align: right !important;
+    font-size: 16px !important;
+  }
+  .estimate-text {
+    font-size: 16px !important;
+    text-align: right !important;
+  }
+  .menu-hamburger {
+    width: 40px;
+    height: 36px;
+    margin-right: 8px;
+  }
+}
+
+header.sticky-top {
+  background-color: $main-gray !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .menu-hamburger {
