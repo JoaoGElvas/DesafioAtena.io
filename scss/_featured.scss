@@ -1,101 +1,13 @@
-.featured-item {
-  cursor: pointer;
-  transition: color 0.2s;
-}
-.featured-item:hover {
-  color: $main-red;
-}
-.featured-item:hover .featured-item-type {
-  color: $main-white;
-}
-.featured-item:hover .featured-item-underline {
-  background: $main-white;
-}
-.featured-item.active {
-  color: #444;
-}
-.featured-item.active .featured-item-type {
-  color: #888;
-}
-.featured-item.active .featured-item-underline {
-  background: #444;
-}
-.featured-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 64px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: $main-black;
-}
-.featured-list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  min-width: 220px;
-}
-.featured-item {
-  color: #444;
-  font-family: $logo-font;
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-.featured-item-title {
-  display: block;
-  font-family: $logo-font;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 100%;
-  letter-spacing: 0;
-  margin-bottom: 25px;
-}
-.featured-item-type {
-  display: block;
-  font-family: $logo-font;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0;
-  color: #888;
-  margin-bottom: 8px;
-  opacity: 1;
-}
-.featured-item-underline {
-  display: block;
-  width: 120px;
-  height: 2px;
-  background: #444;
-  margin-top: 4px;
-}
-.featured-item.active {
-  color: $main-red;
-}
-.featured-item.active .featured-item-type {
-  color: $main-white;
-}
-.featured-item.active .featured-item-underline {
-  background: $main-white;
-}
-// Featured Work Section
 .featured-section {
-  width: 100%;
   background: $main-black;
-  padding: 64px 0 48px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
+
 .featured-header {
   text-align: center;
-  margin-bottom: 32px;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 32px auto;
 }
+
 .featured-title {
   font-family: $logo-font;
   font-size: 64px;
@@ -104,67 +16,65 @@
   line-height: 100%;
   letter-spacing: 0;
   margin-bottom: 30px;
+
+  span {
+    color: $main-red;
+  }
 }
-.featured-title span {
-  color: $main-red;
-  font-weight: 700;
-}
+
 .featured-desc {
   font-family: $logo-font;
   font-size: 16px;
   font-weight: 400;
   color: $main-white;
   opacity: 0.85;
-  margin-bottom: 0;
-  line-height: 100%;
-  letter-spacing: 0;
-  text-align: center;
-  vertical-align: middle;
+  line-height: 1.5;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
+
 .featured-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 64px;
-  width: 100%;
-  max-width: 1200px;
+  background-color: $main-black;
 }
-.featured-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  min-width: 320px;
-  gap: 32px;
-}
-.featured-title {
+
+.featured-item {
   font-family: $logo-font;
-  font-size: 64px;
-  font-weight: 700;
-  color: $main-white;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 32px;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  // Efeitos de hover e active combinados
+  &:hover,
+  &.active {
+    color: $main-red;
+    .featured-item-type {
+      color: $main-white;
+    }
+    .featured-item-underline {
+      background: $main-white;
+    }
+  }
+}
+
+.featured-item-title {
+  display: block;
+  font-family: $logo-font;
+  font-size: 32px;
+  font-weight: 500;
   line-height: 100%;
-  letter-spacing: 0;
-  text-align: center;
+  margin-bottom: 16px;
 }
-.featured-title span {
-  color: $main-red;
-  font-weight: 700;
-}
-.featured-desc {
+
+.featured-item-type {
+  display: block;
   font-family: $logo-font;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
-  color: $main-white;
-  opacity: 0.85;
-  margin-bottom: 0;
   line-height: 100%;
-  letter-spacing: 0;
-  text-align: center;
-  vertical-align: middle;
+  color: #888;
+  margin-bottom: 8px;
 }
 
 .featured-item-underline {
@@ -173,20 +83,19 @@
   height: 2px;
   background: #444;
   margin-top: 4px;
+  transition: background-color 0.2s;
 }
-.featured-item.active .featured-item-underline {
-  background: $main-white;
-}
+
 .featured-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 500px;
-  max-width: 700px;
   background: $main-black;
 }
+
 .featured-image img {
   width: 100%;
-  max-width: 700px;
-  border-radius: 20px;
+  border-radius: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 99 / 59;
+  object-fit: cover;
 }

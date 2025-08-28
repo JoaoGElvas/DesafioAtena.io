@@ -1,40 +1,15 @@
-// Contact Us Section
 .contact-section {
   width: 100%;
   background: $main-gray;
   color: $main-white;
   font-family: $logo-font;
 }
-.contact-container {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding-top: 32px;
-}
-.contact-main {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 32px;
-  border-top: 0;
-}
-.contact-brand {
-  flex: 1.5;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+
 .contact-logo {
   height: 40px;
+  margin-bottom: 1rem;
 }
-.contact-brand-text {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 16px;
-  letter-spacing: 0;
-}
-.contact-brand-red {
-  color: $main-red;
-}
+
 .contact-desc {
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 400;
@@ -44,13 +19,17 @@
   letter-spacing: 0;
   vertical-align: middle;
   max-width: 400px;
+  margin-bottom: 1.5rem;
 }
+
 .contact-newsletter {
   display: flex;
   width: 100%;
   max-width: 340px;
   height: 38px;
+  margin-bottom: 1rem;
 }
+
 .contact-input {
   flex: 1;
   padding: 6px 12px;
@@ -61,6 +40,7 @@
   color: $main-white;
   outline: none;
 }
+
 .contact-btn {
   background: $main-red;
   color: $main-white;
@@ -71,11 +51,13 @@
   cursor: pointer;
   border-radius: 0;
 }
+
 .contact-social {
   display: flex;
   gap: 16px;
   margin-top: 8px;
 }
+
 .contact-social i {
   font-size: 24px;
   color: $main-red;
@@ -84,36 +66,29 @@
   padding: 6px;
   transition: background 0.2s;
 }
+
 .contact-social i:hover {
   background: $main-red;
   color: $main-white;
 }
-.contact-links,
-.contact-services,
-.contact-address {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.contact-title {
-  margin-top: 8px;
-}
+
 .contact-title {
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 26px;
   color: $main-white;
 }
+
 .contact-title-red {
   color: $main-red;
 }
+
 .contact-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .contact-list li {
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 500;
@@ -122,61 +97,42 @@
   line-height: 1;
   letter-spacing: 0;
   vertical-align: middle;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   color: $main-white;
 }
+
 .contact-address-info {
   font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  vertical-align: middle;
   color: $main-white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-.contact-address-info > div {
-  width: 100%;
-  margin-bottom: 12px;
-}
-.contact-main > .contact-brand {
+
+// Estilos para as linhas verticais decorativas
+.contact-brand,
+.contact-services {
   position: relative;
-  padding-right: 48px;
 }
-.contact-main > .contact-brand::after {
+
+.contact-brand::after,
+.contact-services::after {
   content: "";
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -1rem; // Ajustado para o espaçamento do Bootstrap
   transform: translateY(-50%);
   height: 220px;
   width: 2px;
   background: $main-red;
 }
-.contact-main > .contact-links {
-  padding-left: 48px;
-}
-.contact-main > .contact-services {
-  position: relative;
-}
-.contact-main > .contact-services::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  height: 220px;
-  width: 2px;
-  background: $main-red;
-}
-.contact-main > .contact-address {
-  align-items: center;
-}
-@media (max-width: 1100px) {
-  .contact-main {
-    flex-direction: column;
-    gap: 32px;
-  }
-  .contact-main > div {
-    border-right: none;
-    padding: 0;
+
+@media (max-width: 991.98px) {
+  .contact-brand::after,
+  .contact-services::after {
+    display: none;
   }
 }
