@@ -85,3 +85,8 @@ npx sass scss/style.scss css/style.css --watch
 - Barra de rolagem oculta via CSS, scroll permanece funcional.
 - JavaScript modular cobre animações, interatividade do menu, scroll suave e botão de topo.
 - Sass organizado em parciais por seção para facilitar manutenção.
+
+## 🎥 Vídeo Demonstrativo
+
+Veja o funcionamento da landing page neste vídeo:
+[![Demonstração DigiForge](https://img.youtube.com/vi/8kxKZ23m98s/0.jpg)](https://youtu.be/8kxKZ23m98s)
